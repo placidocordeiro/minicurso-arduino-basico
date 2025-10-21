@@ -1,0 +1,29 @@
+{
+  "version": 1,
+  "author": "Plácido de Oliveira",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": -3, "left": 310, "attrs": {} },
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-led", "id": "led1", "top": 25.2, "left": 531.8, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 110.4,
+      "left": 517.85,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    }
+  ],
+  "connections": [
+    [ "r1:1", "bb1:23t.e", "", [ "$bb" ] ],
+    [ "r1:2", "bb1:23b.i", "", [ "$bb" ] ],
+    [ "led1:A", "bb1:24t.c", "", [ "$bb" ] ],
+    [ "led1:C", "bb1:23t.c", "", [ "$bb" ] ],
+    [ "bb1:23b.j", "bb1:bn.19", "green", [ "v0" ] ],
+    [ "uno:5V", "bb1:bp.1", "red", [ "v19.7", "h137.6", "v-19.2" ] ],
+    [ "uno:GND.2", "bb1:bn.1", "black", [ "v29.3", "h3.3" ] ],
+    [ "bb1:bp.20", "bb1:24t.e", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}

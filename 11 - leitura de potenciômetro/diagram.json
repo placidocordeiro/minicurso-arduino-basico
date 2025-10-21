@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "author": "Plácido de Oliveira",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": -3, "left": 319.6, "attrs": {} },
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": 37.1, "left": 422.2, "attrs": {} }
+  ],
+  "connections": [
+    [ "uno:GND.2", "bb1:bn.1", "black", [ "v29.3", "h128.1" ] ],
+    [ "uno:5V", "bb1:bp.1", "red", [ "v19.7", "h147.2", "v-19.2" ] ],
+    [ "pot1:GND", "bb1:12b.f", "black", [ "v0" ] ],
+    [ "pot1:SIG", "bb1:13b.f", "green", [ "v0" ] ],
+    [ "pot1:VCC", "bb1:14b.f", "red", [ "v0" ] ],
+    [ "bb1:bn.10", "bb1:12b.j", "black", [ "v0" ] ],
+    [ "bb1:14b.j", "bb1:bp.11", "red", [ "v0" ] ],
+    [ "bb1:13b.h", "uno:A0", "green", [ "v0", "h-182.4" ] ]
+  ],
+  "dependencies": {}
+}

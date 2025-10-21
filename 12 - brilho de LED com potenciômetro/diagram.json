@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "author": "Plácido de Oliveira",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": -3, "left": 319.6, "attrs": {} },
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": 37.1, "left": 422.2, "attrs": {} },
+    { "type": "wokwi-led", "id": "led1", "top": 15.6, "left": 579.8, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 110.4,
+      "left": 565.85,
+      "rotate": 90,
+      "attrs": { "value": "220" }
+    }
+  ],
+  "connections": [
+    [ "uno:GND.2", "bb1:bn.1", "black", [ "v29.3", "h128.1" ] ],
+    [ "uno:5V", "bb1:bp.1", "red", [ "v19.7", "h147.2", "v-19.2" ] ],
+    [ "pot1:GND", "bb1:12b.f", "black", [ "v0" ] ],
+    [ "pot1:SIG", "bb1:13b.f", "green", [ "v0" ] ],
+    [ "pot1:VCC", "bb1:14b.f", "red", [ "v0" ] ],
+    [ "bb1:bn.10", "bb1:12b.j", "black", [ "v0" ] ],
+    [ "bb1:14b.j", "bb1:bp.11", "red", [ "v0" ] ],
+    [ "bb1:13b.h", "uno:A0", "green", [ "v0", "h-182.4" ] ],
+    [ "led1:A", "bb1:28t.b", "", [ "$bb" ] ],
+    [ "led1:C", "bb1:27t.b", "", [ "$bb" ] ],
+    [ "r1:1", "bb1:27t.e", "", [ "$bb" ] ],
+    [ "r1:2", "bb1:27b.i", "", [ "$bb" ] ],
+    [ "bb1:27b.j", "bb1:bn.22", "green", [ "v0" ] ],
+    [ "bb1:28t.d", "uno:9", "green", [ "v0", "h57.6", "v-105.6", "h-355.2" ] ]
+  ],
+  "dependencies": {}
+}
