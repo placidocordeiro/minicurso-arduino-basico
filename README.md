@@ -1,62 +1,93 @@
 # 🤖 Minicurso Arduino Básico
 
-Este repositório contém o material didático, códigos-fonte e referências para o **Minicurso de Arduino Básico**, criado por Placido Cordeiro.
+Este repositório contém o material didático, códigos-fonte e referências para o **Minicurso de Arduino Básico**, ministrado por Plácido Cordeiro durante a SECOMP UFAL.
 
-O objetivo do curso é fornecer uma introdução prática e direta ao ecossistema Arduino, desde a configuração do ambiente até a criação dos primeiros projetos interativos.
+O curso foi projetado para fornecer uma introdução prática e progressiva ao ecossistema Arduino, desde conceitos fundamentais de eletrônica até projetos integradores com múltiplos componentes.
+
+---
+
+## 🎯 Objetivo do Curso
+
+Introduzir os fundamentos da programação e eletrônica com Arduino, desenvolvendo habilidades práticas desde conceitos simples até projetos integradores, permitindo que iniciantes criem seus primeiros sistemas embarcados funcionais.
 
 ---
 
 ## 📚 Estrutura do Minicurso
 
-O material está organizado em módulos que combinam teoria e prática.
+O material está organizado em módulos progressivos que combinam teoria e prática:
 
-### Módulos
+### **Módulo 1: Introdução à Eletrônica Digital**
+- Alimentação direta de LEDs (5V)
+- Controle de LEDs através de pinos digitais
+- Primeiro programa: Blink com LED
 
-| Módulo | Tópicos Principais |
-| :--- | :--- |
-| **1. Introdução** | O que é Arduino, tipos de placas e IDE (implementação e simulação). |
-| **2. Fundamentos da Programação** | Estrutura de um Sketch (`setup()` e `loop()`), variáveis, funções básicas (digitalWrite, delay). |
-| **3. Entradas e Saídas Digitais** | Acionamento de LEDs (saída) e leitura de botões (entrada). |
-| **4. Entradas e Saídas Analógicas** | Utilização de PWM (saída analógica) e leitura de potenciômetros (entrada analógica). |
+### **Módulo 2: Comunicação e Controle Básico**
+- Uso do Monitor Serial para debug
+- Controle múltiplo de LEDs
+- Implementação de semáforo simples
+
+### **Módulo 3: Técnicas de Controle de Brilho**
+- Introdução ao PWM (Modulação por Largura de Pulso)
+- Controle de intensidade luminosa de LEDs
+
+### **Módulo 4: Entradas Digitais**
+- Leitura de botões com resistor pulldown externo
+- Leitura de botões com resistor pullup externo
+- Uso do pullup interno do Arduino
+
+### **Módulo 5: Entradas Analógicas**
+- Leitura de valores analógicos com potenciômetro
+- Conversão de escalas usando função map()
+- Controle de brilho de LED com potenciômetro
+
+### **Módulo 6: Projeto Integrador**
+- Sistema de controle com feedback visual
+- Implementação de lógica com múltiplos estados
+- Uso combinado de entradas analógicas e saídas digitais/PWM
 
 ---
 
-## 🛠️ Requisitos de Hardware e Software
+## 🛠️ Requisitos
 
-Para acompanhar o minicurso, você precisará de:
+### **Pré-requisitos**
+- Nenhum conhecimento prévio em eletrônica ou programação necessário
 
-### Hardware
+### **Hardware**
+- Placa **Arduino UNO** (ou compatível)
+- Protoboard
+- LEDs, resistores, botões, jumpers e potenciômetro
+- Cabo USB para conexão
 
-* Placa **Arduino UNO** (ou compatível).
-* Protoboard.
-* LEDs, resistores, botão, jumpers e potenciômetro.
-* Cabo USB para conexão com o computador.
-
-### Software
-
-* **Arduino IDE** (Versão mais recente recomendada).
-* Sistema Operacional: Windows, macOS ou Linux.
-* Como alternativa para simulação pode-se usar Tinkercad ou Wokwi (usado para criar e simular os arquivos do repositório).
+### **Software**
+- **Arduino IDE** (versão mais recente)
+- Sistema Operacional: Windows, macOS ou Linux
+- *Opcional:* Tinkercad ou Wokwi para simulação
 
 ---
 
 ## 📖 Como Usar este Repositório
 
-1.  **Clone o Repositório:** Use o comando abaixo para baixar todos os arquivos:
-    ```bash
-    git clone [https://github.com/placidocordeiro/minicurso-arduino-basico.git](https://github.com/placidocordeiro/minicurso-arduino-basico.git)
-    ```
-2.  **Navegue pelo Material:**
-    * O material teórico (slides, textos de apoio) está na pasta `docs/`.
-    * Os códigos-fonte dos exemplos de cada módulo estão na pasta `src/`.
-3.  **Abra e Carregue:** Para rodar um exemplo, abra o arquivo `.ino` correspondente na Arduino IDE, conecte sua placa, compile o código e faça o upload com o circuito já montado.
+1. **Clone o Repositório:**
+   ```bash
+   git clone https://github.com/placidocordeiro/minicurso-arduino-basico.git
+   ```
+
+2. **Navegue pela Estrutura:**
+   - `docs/` - Material teórico (slides, textos de apoio)
+   - `src/` - Códigos-fonte organizados por módulos
+
+3. **Execute os Projetos:**
+   - Abra os arquivos `.ino` na Arduino IDE
+   - Conecte sua placa Arduino
+   - Monte os circuitos conforme os diagramas
+   - Compile e faça upload do código
 
 ---
 
 ## 📝 Licença
 
-O **código-fonte** contido neste repositório está sob a licença **[MIT License](LICENSE)**.
+O **código-fonte** está sob licença **[MIT License](LICENSE)**.
 
-O **conteúdo didático e a documentação** (textos, diagramas, slides) estão sob a licença **[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)**.
+O **conteúdo didático e documentação** estão sob licença **[Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)**.
 
 Você é livre para usar, modificar e compartilhar o material, desde que atribua o crédito ao autor original.
